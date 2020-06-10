@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages</title>
+    <link rel="shortcut icon" href="../../img/gym.png">
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+<style>
+    /* CSS Reset */
+    body{
+        font-family: 'Baloo Bhai 2', cursive;
+        margin: 0px;
+        padding: 0px;
+        background: url('../../img/bg.jpg');
+    }
+
+    .left{
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+
+    .left img{
+        width: 130px;
+        filter: invert(100%);
+    }
+
+    .left div{
+        line-height: 0px;
+        color: white;
+        text-align: center;
+    }
+
+    .mid{
+        display: block;
+        width: 45%;
+        margin: 30px auto;
+       }
+
+    .right{
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 20px;
+    } 
+
+    .navbar{
+        display: inline-block;
+    }
+
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+    }
+
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover, .navbar li a.active{
+        text-decoration: underline;
+        color: grey;
+    }
+
+    .btn{
+        font-family: 'Baloo Bhai 2', cursive;
+        margin:0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover{
+        background-color: grey;
+    }
+
+    .container{
+        margin: 106px 80px;
+        padding: 75px;
+        width:60%;
+        border-radius: 28px;
+    }
+
+    .container h1,h3{
+        color:white;
+        line-height: 10px;
+    }
+
+    .btn1{
+        font-family: 'Baloo Bhai 2', cursive;
+        margin:0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .btn1:hover{
+        background-color: grey;
+    }
+
+    * {
+  box-sizing: border-box;
+}
+
+.columns {
+  float: left;
+  width: 33%;
+  padding: 8px;
+}
+
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+.button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.button:hover{
+    background-color: grey;
+}
+
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+           <a href="../../index.html"><img src="../../img/gym.png" alt=""></a>
+            <div>The Sweat Arena</div>
+        </div>
+
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../about_us/about_us.html">About Us</a></li>
+                <li><a href="#" class="active">Packages</a></li>
+                <li><a href="../contact/contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Right box for buttons -->
+        <div class="right">
+            <a href="../join_us/join.html"><button class="btn1">Join Now</button></a>
+        </div>
+    </header>
+    <div class="container">
+        <div class="columns">
+            <ul class="price">
+              <li class="header">GYM</li>
+              <li class="grey">Rs. 2000 / year</li>
+              <li class="grey"><a href="../join_us/join.html" class="button">Join Now</a></li>
+            </ul>
+          </div>
+          
+          <div class="columns">
+            <ul class="price">
+              <li class="header">CARDIO</li>
+              <li class="grey">Rs. 3000 / year</li>
+              <li class="grey"><a href="../join_us/join.html" class="button">Join Now</a></li>
+            </ul>
+          </div>
+          
+          <div class="columns">
+            <ul class="price">
+              <li class="header">CARDIO+GYM</li>
+              <li class="grey">Rs. 4500/ year</li>
+              <li class="grey"><a href="../join_us/join.html" class="button">Join Now</a></li>
+            </ul>
+          </div>
+    </div> 
+</body>
+</html>
